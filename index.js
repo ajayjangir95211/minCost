@@ -8,14 +8,8 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.send(`<h2>English to French Converter</h2>
-    <form action="/" method="post">
-        <label for="englishText">Enter English text:</label><br>
-        <textarea id="englishText" name="text" rows="4" cols="50"></textarea><br>
-        <button type="submit">Convert to French</button>
-    </form>`);
+    res.send("< h2 > Minimum Cost API</h2 > < p > Use Post method to access the API</p > ");
 });
-
 function printGraph(graph) {
     for (const vertex in graph) {
         if (graph.hasOwnProperty(vertex)) {
