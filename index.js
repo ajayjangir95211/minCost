@@ -8,7 +8,10 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 app.get('/', (req, res) => {
-    res.send("< h2 > Minimum Cost API</h2 > < p > Use Post method to access the API</p > ");
+    res.send(`
+    <h2> Minimum Cost API</h2>
+    <p> Use Post method to access the API</p>
+    `);
 });
 function printGraph(graph) {
     for (const vertex in graph) {
