@@ -36,7 +36,9 @@ const location = {
 }
 
 function calculateCost(distance, load) {
-    rate = 10 + Math.floor(load / 5) * 8;
+    rate = 10 + (Math.ceil(load / 5) - 1) * 8;
+    if (load == 0)
+        rate = 10;
     return distance * rate;
 }
 
